@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+      .outline {
+        text-align:left;
+      }
+      .roulette {
+        display: inline-block;
+        border:1px solid #000000;
+        font-size:40px;
+        width:60px;
+      }
+    </style>
+    <script language="javascript" type="text/javascript">
+      var roulette;
+
+      // ルーレットを開始
+      function start() {
+        roulette = setInterval(function() {
+          
+          var idx = Math.floor( Math.random() * 6 ) + 1;
+          
+          document.getElementById("roulette").innerHTML = idx;
+        }, 100);
+      }
+ 
+      
+      function stop() {
+        if(roulette) {
+          clearInterval(roulette);
+        }
+      }
+    </script>
+  </head>
+  <body>
+      <h1>今日の名言（あなたに勇気を与える言葉）</h1>
+    <div class="outline">
+      <div class="roulette" id="roulette">1</div>
+      <br />
+      <input type="button" value="スタート" id="start" onclick="start();"/>
+      <input type="button" value="ストップ" id="stop" onclick="stop();"/>
+    </div>
+
+    <div>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>名言</th>
+        </tr>
+        
+        <tr>
+            <th>1</th>
+              <td>やりたいことを思いっきりやるためにはやりたくないことも思いっきりやんなきゃいけないんだ（ちはやふる）</td>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <td>負けたことがあるということが、いつか大きな財産になる（スラムダンク）</td>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <td>本気の失敗には、価値がある（宇宙兄弟）</td>
+        </tr>
+
+        <tr>
+            <th>4</th>
+            <td>一番いけないのは自分なんかダメだと思い込むことだよ（ドラえもん）</td>
+        </tr>
+
+        <tr>
+            <th>5</th>
+            <td>仲間を大切にしない奴はそれ以上のクズだ（ナルト）</td>
+        </tr>
+
+        <tr>
+            <th>6</th>
+            <td>他の奴と自分を比べんな。まずは自分が勝つことを考えろ（銀魂）</td>
+        </tr>
+    </table>
+    </div>
+
+    <a href="../final report/a.html">ホームに戻る</a>
+
+  </body>
+</html>

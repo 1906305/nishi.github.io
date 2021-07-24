@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+    font-size: 16px;
+    font-family: Meiryo "メイリオ";
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: rgb(20, 110, 220);
+}
+
+dt {
+    font-size: 30px;
+    color: rgb(71, 255, 129);
+}
+
+.sample {
+    font-size: 30px;
+    color: rgb(199, 21, 181);
+}
+

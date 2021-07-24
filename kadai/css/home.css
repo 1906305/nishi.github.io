@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+h1 {
+    text-align: center;
+    font-size: 20ex;
+    font-style: inherit;
+}
+
+h2 {
+    color: purple;
+    text-align: center;
+    background-color: rosybrown;
+}
+
+body {
+    background-image: url(../img/S_janpu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button {
+    background-color: lightseagreen;
+}
+
+.sample {
+    text-align: center;
+}
+
+.sample > li {
+    display: inline;
+}
+
+.sample > li:nth-child(n+2){
+    margin-left: 20px;
+}
